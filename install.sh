@@ -50,6 +50,7 @@ mkdir -p /root/conf
 cd /root/conf
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/domain.conf
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/php.conf
+wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/mysql.conf
 cd /root
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/addweb.sh
 chmod +x addweb.sh 
