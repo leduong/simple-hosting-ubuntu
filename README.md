@@ -13,6 +13,8 @@ Open terminal
 
 After install: No restart; Can use it now, must start service nginx, mysql and proftpd.
 
-Open terminal, sudo /root/addweb.sh [enter]
+Open terminal, sudo /root/addweb.sh [enter] - create new web hosting by command line
+
+- Next version: update, Webhosting Control Panel
 
 Good luck!
