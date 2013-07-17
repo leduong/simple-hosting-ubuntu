@@ -2,3 +2,14 @@ Hello, I'm newbie
 
 - Share hosting with Ubuntu support with nginx via php-cgi
 
+How to install:
+Open terminal
+1. Download install.sh
+2. # chmod +x install.sh [enter]
+3. # sudo install.sh [enter]
+
+After install: No restart; Can use it now, must start service nginx, mysql and proftpd.
+
+Open terminal, sudo /root/addweb.sh [enter]
+
+Good luck!

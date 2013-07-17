@@ -20,10 +20,35 @@
 #  MA 02110-1301, USA.
 #
 # 
-sudo apt-get -y update
-sudo apt-get -y install nginx
-sudo apt-get -y install proftpd
-sudo apt-get -y install php5-cli php5-common php5-suhosin php5-gd php5-fpm php-pear php5-memcache php-apc
-sudo apt-get -y install mysql-server php5-mysql mysql-client
+apt-get -y update
+apt-get -y install nginx-extras
+apt-get -y install proftpd
+apt-get -y install php5-cli php5-common php5-suhosin php5-mcrypt php5-curl php5-gd php5-fpm php-pear php5-memcache php-apc
+apt-get -y install mysql-server php5-mysql mysql-client
+# configure
+sed -i 's/DSHELL=.*\+/DSHELL=\/usr\/sbin\/nologin/' /etc/adduser.conf
+echo "Ok: change /usr/sbin/nologin file /etc/adduser.conf"
 
+sed -i 's/DIR_MODE=.*\+/DIR_MODE=0710/' /etc/adduser.conf
+echo "Ok: change DIR_MODE=0710 file /etc/adduser.conf"
+
+sed -i 's/SHELL=.*\+/SHELL=\/usr\/sbin\/nologin/' /etc/default/useradd
+echo "Ok: change /usr/sbin/nologin file /etc/default/useradd"
+
+echo "/usr/sbin/nologin" >> /etc/shells
+echo "Ok: add /usr/sbin/nologin to /etc/shells"
+
+echo "DefaultRoot			~" >> /etc/proftpd/proftpd.conf
+mkdir /etc/skel/www
+echo "<?php phpinfo();?>" > /etc/skel/www/phpinfo.php
+echo "<h1>Hello World!!!</h1>" > /etc/skel/www/index.html
+mkdir /etc/nginx/perl
+cd /ett/nginx/perl
+#wget http://leduong.com/Minify.pm
+mkdir /root/conf
+cd /root/conf
+#wget http://leduong.com/domain.conf
+#wget http://leduong.com/php.conf
+cd /root
+#wget http://leduong.com/addweb.sh
 exit 0
