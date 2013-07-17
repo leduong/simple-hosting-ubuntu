@@ -1,0 +1,177 @@
+{
+   "browser": {
+      "clear_data": {
+         "form_data": true,
+         "passwords": true,
+         "time_period": 4
+      },
+      "show_home_button": true
+   },
+   "countryid_at_install": 18757,
+   "default_search_provider": {
+      "enabled": true,
+      "encodings": "",
+      "icon_url": "",
+      "id": "5",
+      "instant_url": "",
+      "keyword": "duckduckgo.com",
+      "name": "DuckDuckGo",
+      "prepopulate_id": "0",
+      "search_url": "http://duckduckgo.com/?t=lm&q={searchTerms}",
+      "suggest_url": ""
+   },
+   "dns_prefetching": {
+      "host_referral_list": [ 2, [ "http://blog.linuxmint.com/", [ "http://stats.wordpress.com/", 0.08499999999999999, "http://www.hellotux.com/", 0.1275, "http://www.linksalpha.com/", 0.4249999999999999, "http://www.linuxmint.com/", 2.0399999999999996, "https://99designs.com/", 0.08499999999999999 ] ], [ "http://forums.linuxmint.com/", [ "http://googleads.g.doubleclick.net/", 0.1275, "http://pagead2.googlesyndication.com/", 0.1275 ] ], [ "http://googleads.g.doubleclick.net/", [ "http://pagead2.googlesyndication.com/", 0.15901380397839998, "http://s0.2mdn.net/", 0.08499999999999999 ] ], [ "http://linuxmint.com/", [ "http://www.linuxmint.com/", 0.13709246759999996 ] ], [ "http://platform0.twitter.com/", [ "http://urls.api.twitter.com/", 0.4249999999999999 ] ], [ "http://www.facebook.com/", [ "http://static.ak.fbcdn.net/", 0.25499999999999995 ] ], [ "http://www.linksalpha.com/", [ "http://platform0.twitter.com/", 0.4249999999999999, "http://static.ak.fbcdn.net/", 0.21249999999999997, "http://widgets.digg.com/", 0.1275, "http://www.facebook.com/", 0.5524999999999999, "http://www.google-analytics.com/", 0.46749999999999986, "http://www.google.com/", 0.16999999999999998, "http://www.linkedin.com/", 0.4249999999999999, "http://www.stumbleupon.com/", 0.8499999999999998 ] ], [ "http://www.stumbleupon.com/", [ "http://cdn.stumble-upon.com/", 0.06693716 ] ] ],
+      "startup_list": [ 1, "http://csi.gstatic.com/", "http://linkhelp.clients.google.com/", "http://www.google.com/", "http://www.linuxmint.com/" ]
+   },
+   "download": {
+      "directory_upgrade": true,
+      "extensions_to_open": ""
+   },
+   "extensions": {
+      "autoupdate": {
+         "next_check": "12948818622393964"
+      },
+      "chrome_url_overrides": {
+         "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
+      },
+      "settings": {
+         "bjbifppfjimgbjjanagdkdgdpnlcfpcp": {
+            "app_launcher_index": 0,
+            "granted_permissions": {
+               "full": false,
+               "host": [ "http://*/*", "https://*/*" ]
+            },
+            "incognito": true,
+            "install_time": "12948817688461093",
+            "location": 1,
+            "manifest": {
+               "content_scripts": [ {
+                  "include_globs": [ "http://*.google.*/cse*", "http://google.*/cse*", "http://*.google.*/custom*", "http://google.*/custom*" ],
+                  "js": [ "script.js" ],
+                  "matches": [ "http://*/*", "https://*/*" ]
+               } ],
+               "converted_from_user_script": true,
+               "description": "Enhances the results given by Google CSE",
+               "key": "/3Vz98ob5JWKmAcB4bA+anefiHtG7QNTtg5N2qHEaFw=",
+               "name": "Mint Search Enhancer",
+               "version": "1.0"
+            },
+            "path": "bjbifppfjimgbjjanagdkdgdpnlcfpcp/1.0_0",
+            "state": 1
+         }
+      }
+   },
+   "google": {
+      "services": {
+         "username": ""
+      }
+   },
+   "homepage": "http://www.linuxmint.com/start/lisa",
+   "homepage_is_newtabpage": false,
+   "instant": {
+      "confirm_dialog_shown": true,
+      "enabled": true,
+      "enabled_once": true,
+      "enabled_time": "12948817651094378"
+   },
+   "ntp": {
+      "most_visited_blacklist": {
+         "5b7096bfec19d7753b5d0429c5e1bc88": null,
+         "7cd07943f8152ce6803dd5dea75d799a": null,
+         "9cc89046a24a101ed2f5e8985b034bf7": null,
+         "c8e0afd1da1d9e29511240861f795a5a": null,
+         "cfcd09a18494a9398c60b19404b242a7": null,
+         "e3b17abbabed597422174212d28a2bd8": null
+      },
+      "pref_version": 3,
+      "promo_build": 2,
+      "promo_closed": false,
+      "promo_end": 1299830340.0,
+      "promo_group": 3,
+      "promo_group_timeslice": 0,
+      "promo_line": "Use Chrome on another computer? Take your bookmarks and more with you.",
+      "promo_start": 1299830280.0,
+      "shown_sections": 1,
+      "web_resource_cache_update": "1304343667.695276"
+   },
+   "plugins": {
+      "enabled_internal_pdf3": true,
+      "last_internal_directory": "/usr/lib/chromium-browser",
+      "plugins_list": [ {
+         "enabled": true,
+         "name": "Shockwave Flash",
+         "path": "/opt/mint-flashplugin-10.3/libflashplayer.so",
+         "version": "10.3 d180"
+      }, {
+         "enabled": true,
+         "name": "iTunes Application Detector",
+         "path": "/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "VLC Multimedia Plugin (compatible Totem 2.32.0)",
+         "path": "/usr/lib/mozilla/plugins/libtotem-cone-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Windows Media Player Plug-in 10 (compatible; Totem)",
+         "path": "/usr/lib/mozilla/plugins/libtotem-gmp-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "DivX\u00AE Web Player",
+         "path": "/usr/lib/mozilla/plugins/libtotem-mully-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "QuickTime Plug-in 7.6.6",
+         "path": "/usr/lib/mozilla/plugins/libtotem-narrowspace-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Picasa",
+         "path": "/opt/google/picasa/3.0/lib/npPicasa3.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Default Plug-in",
+         "path": "default_plugin",
+         "version": "1"
+      }, {
+         "enabled": true,
+         "name": "Shockwave Flash"
+      }, {
+         "enabled": true,
+         "name": "iTunes Application Detector"
+      }, {
+         "enabled": true,
+         "name": "VLC Multimedia Plugin (compatible Totem 2.32.0)"
+      }, {
+         "enabled": true,
+         "name": "Windows Media Player Plug-in 10 (compatible; Totem)"
+      }, {
+         "enabled": true,
+         "name": "DivX\u00AE Web Player"
+      }, {
+         "enabled": true,
+         "name": "QuickTime Plug-in 7.6.6"
+      }, {
+         "enabled": true,
+         "name": "Picasa"
+      }, {
+         "enabled": true,
+         "name": "Default Plug-in"
+      } ]
+   },
+   "profile": {
+      "content_settings": {
+         "pref_version": 1
+      },
+      "exited_cleanly": true,
+      "multiple_profile_prefs_version": 1
+   },
+   "tabs": {
+      "use_vertical_tabs": false
+   }
+}

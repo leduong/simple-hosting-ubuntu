@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "exclude_globs": [  ],
+      "include_globs": [ "http://*.google.*/cse*", "http://google.*/cse*", "http://*.google.*/custom*", "http://google.*/custom*" ],
+      "js": [ "script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "converted_from_user_script": true,
+   "description": "Enhances the results given by Google CSE",
+   "key": "/3Vz98ob5JWKmAcB4bA+anefiHtG7QNTtg5N2qHEaFw=",
+   "name": "Mint Search Enhancer",
+   "version": "1.0"
+}

@@ -1,0 +1,46 @@
+{
+   "checksum": "5c8d20c3607275791266fa758484bdbb",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "12948817869067570",
+            "id": "6",
+            "name": "Linux Mint",
+            "type": "url",
+            "url": "http://linuxmint.com/"
+         }, {
+            "date_added": "12948817851931624",
+            "id": "4",
+            "name": "Community",
+            "type": "url",
+            "url": "http://community.linuxmint.com/"
+         }, {
+            "date_added": "12948817858747558",
+            "id": "5",
+            "name": "Forums",
+            "type": "url",
+            "url": "http://forums.linuxmint.com/"
+         }, {
+            "date_added": "12948817836995614",
+            "id": "3",
+            "name": "Blog",
+            "type": "url",
+            "url": "http://blog.linuxmint.com/"
+         } ],
+         "date_added": "11644473600000000",
+         "date_modified": "12948818038140842",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "11644473600000000",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
