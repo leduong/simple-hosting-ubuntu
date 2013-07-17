@@ -4,7 +4,7 @@ Hello, I'm newbie
 
 How to install:
 Open terminal
-1. Download install.sh
+1. Download install.sh # wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/install.sh
 2. # chmod +x install.sh [enter]
 3. # sudo install.sh [enter]
 

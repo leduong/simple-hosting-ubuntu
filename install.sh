@@ -47,8 +47,8 @@ cd /ett/nginx/perl
 #wget http://leduong.com/Minify.pm
 mkdir /root/conf
 cd /root/conf
-#wget http://leduong.com/domain.conf
-#wget http://leduong.com/php.conf
+wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/domain.conf
+wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/php.conf
 cd /root
-#wget http://leduong.com/addweb.sh
+wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/addweb.sh
 exit 0
