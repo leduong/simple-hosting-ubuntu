@@ -39,16 +39,18 @@ echo "/usr/sbin/nologin" >> /etc/shells
 echo "Ok: add /usr/sbin/nologin to /etc/shells"
 
 echo "DefaultRoot			~" >> /etc/proftpd/proftpd.conf
-mkdir /etc/skel/www
+mkdir -p /etc/skel/www
 echo "<?php phpinfo();?>" > /etc/skel/www/phpinfo.php
 echo "<h1>Hello World!!!</h1>" > /etc/skel/www/index.html
-mkdir /etc/nginx/perl
-cd /ett/nginx/perl
-#wget http://leduong.com/Minify.pm
-mkdir /root/conf
+mkdir -p /etc/nginx/perl
+cd /etc/nginx/perl
+wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/etc/nginx/perl/Minify.pm
+mkdir -p /root/conf
 cd /root/conf
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/domain.conf
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/conf/php.conf
 cd /root
 wget https://raw.github.com/leduong/simple-hosting-ubuntu/master/addweb.sh
-exit 0
+chmod +x addweb.sh 
+echo "finish, done"
+echo "/root/addweb.sh [enter] to create new webhosting"
