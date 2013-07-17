@@ -18,8 +18,10 @@ if [ $(id -u) -eq 0 ]; then
 			ln -sf /etc/nginx/sites-available/$domain /etc/nginx/sites-enabled/$domain 
 			#Apache a2ensite $domain
 			service nginx reload
-                        mysql -uroot -p < "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';GRANT USAGE ON * . * TO '$username'@'localhost' IDENTIFIED BY '$password' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
-CREATE DATABASE IF NOT EXISTS `$username`;GRANT ALL PRIVILEGES ON `$username` . * TO '$username'@'localhost';"
+                        echo "Create database for user: $username, input password root of MySQL"
+                        sed -e "s/domain/$domain/g" -e "s/username/$username/g" < /root/conf/mysql.conf > /tmp/$username.sql
+                        mysql -uroot -p < /tmp/$username.sql
+                        rm -f /tmp/$username.sql
                 else
                         echo "Failed to add a user!"
                 fi
