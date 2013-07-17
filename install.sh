@@ -22,6 +22,7 @@
 # 
 apt-get -y update
 apt-get -y install nginx-extras
+apt-get -y install libjavascript-minifier-perl libcss-minifier-perl
 apt-get -y install proftpd
 apt-get -y install php5-cli php5-common php5-suhosin php5-mcrypt php5-curl php5-gd php5-fpm php-pear php5-memcache php-apc
 apt-get -y install mysql-server php5-mysql mysql-client
